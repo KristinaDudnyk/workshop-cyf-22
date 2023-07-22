@@ -10,6 +10,6 @@ app.get("/", (req, res) => {
 
 app.get("/count", (req, res) => {
   count += 1;
-  res.status(200).send("count is ", count);
+  res.status(200).send("count is " + count);
 });
 app.listen(3002);
